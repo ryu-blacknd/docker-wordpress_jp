@@ -1,0 +1,13 @@
+sudo: required
+
+services:
+  - docker
+
+before_script:
+  - docker version
+
+script:
+  - docker build -t wordpress_jp .
+
+after_script:
+  - docker images

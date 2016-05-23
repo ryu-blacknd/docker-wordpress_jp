@@ -1,0 +1,15 @@
+mysql:
+  image: mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: password
+  ports:
+    - "3306:3306"
+
+wordpress:
+  image: ryublacknd/wordpress_jp
+  links:
+    - mysql:mysql
+  ports:
+    - 80:80
+  volumes:
+    - ${PWD}/wp-content:/var/www/html/wp-content
