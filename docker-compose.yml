@@ -3,7 +3,13 @@ mysql:
   environment:
     MYSQL_ROOT_PASSWORD: password
   ports:
-    - "3306:3306"
+    - 3306:3306
+
+postfix:
+  image: ryublacknd/postfix
+  ports:
+    - 25:25
+    - 587:587
 
 wordpress:
   image: ryublacknd/wordpress_jp

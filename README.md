@@ -1,8 +1,6 @@
-# docker-wordpress_jp
+# Docker: WordPress日本語版
 
-Dockerイメージ：WordPress日本語版
-
-[![Build Status](https://travis-ci.org/ryu-blacknd/wordpress_jp.svg?branch=master)](https://travis-ci.org/ryu-blacknd/wordpress_jp)
+[![Build Status](https://travis-ci.org/ryu-blacknd/docker-wordpress_jp.svg?branch=master)](https://travis-ci.org/ryu-blacknd/docker-wordpress_jp)
 
 php:5.6-apacheをベースに、WordPress日本語版を起動するDockerイメージ。
 
