@@ -15,6 +15,7 @@ wordpress:
   image: ryublacknd/wordpress_jp
   links:
     - mysql:mysql
+    - postfix:postfix
   ports:
     - 80:80
   volumes:
